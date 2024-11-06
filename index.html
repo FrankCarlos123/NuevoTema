@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Escáner de Productos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Escáner de Productos</h1>
+      </div>
+
+      <div class="button-container">
+        <button class="btn btn-primary camera-btn">Escanear</button>
+        <button class="btn btn-danger clear-btn">Limpiar</button>
+      </div>
+
+      <div class="camera-section">
+        <video id="camera" autoplay playsinline style="display: none"></video>
+        <canvas id="canvas" style="display: none"></canvas>
+        <img id="captured-image" style="display: none" />
+      </div>
+
+      <div class="result-container">
+        <div class="product-image-container">
+          <!-- Aquí irá la imagen del producto -->
+        </div>
+        <div class="qr-container">
+          <div id="qrcode" class="qr-code"></div>
+          <div id="code-text" class="code-text"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
